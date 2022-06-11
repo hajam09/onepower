@@ -1,0 +1,12 @@
+1. Employee account is created by system admin with temporary password.
+2. Customer open an account by themselves.
+3. Adding more account is done by employee by request, usually for companies managing multiple meterpoints.
+4. The company settings page has fields which can be edited by admin of the company, such as bank details.
+5. Each company manages which utility they provide.
+6. Meterpoint can be viewed by Account -> Meterpoints -> Meterpoint
+7. MeterPoints have detailed info such as usage, amount, siteAddress and more.
+8. Metepoint view has detailed info for that meterpoint, raise query or allow them to pay.
+9. For each account, based on the billing cycle generate Bill
+10. MeterReading is done by the user with Proof.
+11. MeterReading is done by employee as bulk.
+12. Charges are set by the employee for each Account which has to be agreed by each party.

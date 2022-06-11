@@ -76,7 +76,6 @@ class Bill(models.Model):
         ACCEPTANCE_PENDING = 'ACCEPTANCE_PENDING', _('Acceptance Pending')
 
     customerAccount = models.ForeignKey(CustomerAccount, on_delete=models.PROTECT)
-    accountTransaction = None
     billPeriod = models.ForeignKey(BillPeriod, on_delete=models.PROTECT)
     billedFromDttm = models.DateTimeField()
     billedToDttm = models.DateTimeField()

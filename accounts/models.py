@@ -55,7 +55,7 @@ class Employee(models.Model):
 
 
 class CustomerAccount(models.Model):
-    user = models.OneToOneField(User, on_delete=models.SET_NULL, related_name='customerAccount')
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, related_name='customerAccounts')
     number = models.BigIntegerField(max_length=10, editable=False, unique=True, default=generateReferenceNumber)
     address = models.ForeignKey(Address, on_delete=models.SET_NULL)
     createdDttm = models.DateTimeField(auto_now_add=True)
